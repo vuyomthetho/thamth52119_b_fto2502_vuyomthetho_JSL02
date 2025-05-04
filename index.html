@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kanban Board UI</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar hide-mobile">
+      <div class="top-bar hide-mobile">
+        <img
+          src="images/logo-light.png"
+          alt="Kanban Logo"
+          style="width: 120px; height: auto; margin-bottom: 20px"
+        />
+      </div>
+
+      <nav class="boards-section">
+        <h2 class="boards-title">ALL BOARDS (1)</h2>
+        <ul>
+          <li class="active-board">Launch Career</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="top-bar">
+        <h1>Launch career</h1>
+      </div>
+      <div class="board">
+        <div class="column" data-status="todo">
+          <div class="status-item">
+            <span
+              class="status-circle"
+              style="background-color: #49c4e5"
+            ></span>
+            <span class="status-text">TODO (4)</span>
+          </div>
+          <div class="card">Launch Epic Career🚀</div>
+          <div class="card">Conquer react⚛</div>
+          <div class="card">Understand Database⚙</div>
+          <div class="card">Crush Framework🖼</div>
+          <button class="add-task-btn">+ Add Task</button>
+        </div>
+        <div class="column" data-status="doing">
+          <div class="status-item">
+            <span
+              class="status-circle"
+              style="background-color: #635fc7"
+            ></span>
+            <span class="status-text">DOING (2)</span>
+          </div>
+          <div class="card">Master Javascript💛</div>
+          <div class="card">Never Give Up🏆</div>
+          <button class="add-task-btn">+ Add Task</button>
+        </div>
+
+        <div class="column" data-status="done">
+          <div class="status-item">
+            <span
+              class="status-circle"
+              style="background-color: #67e2ae"
+            ></span>
+            <span class="status-text">DONE (2)</span>
+          </div>
+          <div class="card">Explore ES6 Features🚀</div>
+          <div class="card">Have Fun🥳</div>
+          <button class="add-task-btn">+ Add Task</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
